@@ -92,7 +92,11 @@
                         <div class="athlets_border_growth"></div>
                     </li>
                 </ul>
-                <img class="football" src="mq-diploma-master/sources/img/footballer_566.png" alt="footballer_picture">
+                <picture class="football">
+                    <source media="(min-width: 769px)" srcset="mq-diploma-master/sources/img/footballer_566.png">
+                    <source media="(max-width: 768px)" srcset="mq-diploma-master/sources/img/footballer_497.png">
+                    <img src="mq-diploma-master/sources/img/footballer_566.png" alt="footballer_picture">
+                </picture>
             </article>
             <article class="players_news">
                 <h2 class="players">Players</h2>
@@ -114,7 +118,11 @@
                         <div class="players_border_growth"></div>
                     </li>
                 </ul>
-                <img class="basketball" src="mq-diploma-master/sources/img/basketballer_991.png" alt="basketballer_picture">
+                <picture class="basketball">
+                    <source media="(min-width: 769px)" srcset="mq-diploma-master/sources/img/basketballer_991.png">
+                    <source media="(max-width: 768px)" srcset="mq-diploma-master/sources/img/basketballer_436.png">
+                    <img src="mq-diploma-master/sources/img/basketballer_991.png" alt="footballer_picture">
+                </picture>
             </article>
             <article class="card">
                 <img src="mq-diploma-master/sources/img/be-active_960.jpg" alt="man_with_tel_picture">
@@ -122,7 +130,7 @@
                     <h2 class="card_title">Be active</h2>
                     <span class="card_text">Post videos with your skills, Like and follow others to be more popular.</span>
                 </div>
-                <div class="number_box"></div>
+                <div class="number_box skill"></div>
                 <span class="number">01</span>
             </article>
             <article class="card">
@@ -154,7 +162,7 @@
                     </div>
                 </div>
                 <div class="download_links">
-                    <button class="download_button" type="button" name="download-button">
+                    <button class="download_button" type="submit" name="download-button">
                     <div class="download_icon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +178,7 @@
                     ><span class="apple_line2">app store</span>
                     </div>
                 </button>
-                    <button class="download_button" type="button" name="download-button">
+                    <button class="download_button" type="submit" name="download-button">
                     <div class="download_icon">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +216,6 @@
                 </div>
             </div>
         </footer>
-
     </div>
 </body>
 

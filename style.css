@@ -87,6 +87,35 @@ body {
     margin-left: 455px;
 }
 
+@media (max-width: 768px) {
+    .header {
+        width: 768px;
+        background-image: url("mq-diploma-master/sources/img/football_767.jpg");
+        padding-top: 40px;
+    }
+    .main_container {
+        width: 768px;
+    }
+    .container {
+        width: 655px;
+    }
+    .header_logo {
+        width: 205px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main_title {
+        font-size: 64px;
+    }
+    .first_row {
+        margin-top: 160px;
+    }
+    .second_row {
+        width: 590px;
+        margin-left: 110px;
+    }
+}
+
 .download_links {
     display: flex;
     justify-content: center;
@@ -148,6 +177,10 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.7px;
     text-align: left;
+}
+
+.download_button {
+    cursor: pointer;
 }
 
 .content {
@@ -457,6 +490,66 @@ body {
     position: absolute;
     right: 115px;
     top: -120px;
+}
+
+
+/* ---------------------------athlets-------------------- */
+
+@media (max-width: 768px) {
+    .athlets_news {
+        width: 768px;
+    }
+    .item_athlets {
+        padding: 60px 40px 55px 280px;
+    }
+    .athlets {
+        padding-left: 280px;
+        margin: 85px 0px 48px 0px;
+    }
+    .athlets_title_connection,
+    .athlets_title_collaboration,
+    .athlets_title_growth {
+        font-size: 32px;
+    }
+    .description,
+    .description_growth {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+    }
+    .football {
+        left: -163px;
+        top: 10px;
+    }
+}
+
+
+/* -----------------------------players------------------------ */
+
+@media (max-width: 768px) {
+    .players_news {
+        width: 768px;
+    }
+    .item_players {
+        padding: 60px 330px 55px 34px;
+    }
+    .players {
+        padding-left: 34px;
+        margin: 85px 0px 48px 0px;
+    }
+    .players_title_connection,
+    .players_title_collaboration,
+    .players_title_growth {
+        font-size: 32px;
+    }
+    .description,
+    .description_growth {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+    }
+    .basketball {
+        top: -35px;
+        right: 0;
+    }
 }
 
 .card {
