@@ -1,467 +1,466 @@
-@font-face {
-    font-family: "Open Sans";
-    src: url("mq-diploma-master/sources/fonts/OpenSans-Regular.woff");
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: "Open Sans";
-    src: url("mq-diploma-master/sources/fonts/OpenSans-Bold.woff");
-    font-style: normal;
-    font-weight: 700;
-}
-
-body {
-    font-family: "Open Sans", Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-img {
-    display: block;
-}
-
-.header {
-    width: 1920px;
-    background-image: url("mq-diploma-master/sources/img/football_1920.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 45px;
-    padding-bottom: 110px;
-}
-
-.header::after {
-    content: "";
-    background-color: #0a0e34;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.9;
-}
-
-.container {
-    position: relative;
-    z-index: 1;
-    width: 1560px;
-    margin: 0 auto;
-    padding: 0px;
-}
-
-.header_logo {
-    width: 191px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.main_text {
-    margin-top: 295px;
-}
-
-.main_title {
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 90px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4.96px;
-    line-height: 100px;
-}
-
-.first_row {
-    display: inline-block;
-    width: 690px;
-    margin: 0px;
-}
-
-.second_row {
-    display: inline-block;
-    width: 1100px;
-    margin-left: 455px;
-}
-
-.download_links {
-    display: flex;
-    justify-content: center;
-    margin-top: 222px;
-}
-
-.download_button {
-    display: flex;
-    vertical-align: middle;
-    width: 311px;
-    height: 77px;
-    border: none;
-    background-color: #5e42b0;
-    border-radius: 50px;
-}
-
-.download_button:nth-child(n+2) {
-    margin-left: 50px;
-}
-
-.download_icon {
-    display: flex;
-    margin: 0px 25px 0px 30px;
-}
-
-.apple_icon,
-.google_icon {
-    width: 42px;
-    height: 48px;
-}
-
-.apple_download,
-.google_download {
-    display: flex;
-    width: 100px;
-    flex-direction: column;
-    align-self: center;
-}
-
-.apple_line1,
-.google_line1 {
-    min-width: 147px;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    text-align: left;
-}
-
-.apple_line2,
-.google_line2 {
-    min-width: 105px;
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    text-align: left;
-}
-
-.download_button {
-    cursor: pointer;
-}
-
-.athlets_news {
-    box-sizing: border-box;
-    position: relative;
-}
-
-.football {
-    position: absolute;
-    left: 350px;
-    top: -100px;
-}
-
-.content {
-    width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.athlets {
-    color: #e7e7e7;
-    margin: 115px 0px 48px 0px;
-    font-family: "Open Sans";
-    font-size: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 0;
-    padding-left: 1010px;
-}
-
-.athlets_section {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-}
-
-.title_connection,
-.title_collaboration,
-.title_growth {
-    display: flex;
-    color: #c1c1c1;
-    font-family: "Open Sans";
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.8px;
-    margin: 0px 0px 20px 0px;
-    position: relative;
-}
-
-.title_connection::before {
-    content: "01";
-}
-
-.title_collaboration::before {
-    content: "02";
-}
-
-.title_growth::before {
-    content: "03";
-}
-
-.title_connection::before,
-.title_collaboration::before,
-.title_growth::before {
-    margin-right: 10px;
-    color: #000000;
-    font-family: "Open Sans";
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.9px;
-    padding-top: 8px;
-}
-
-.title_connection::after,
-.title_collaboration::after {
-    content: "";
-    width: 21px;
-    height: 5px;
-    background-color: #5e42b0;
-    border-radius: 2px;
-    position: absolute;
-    top: 32px;
-}
-
-.title_growth::after {
-    content: "";
-    width: 21px;
-    height: 5px;
-    background-color: #efefef;
-    border-radius: 2px;
-    position: absolute;
-    top: 32px;
-}
-
-.title_growth_purple {
-    display: flex;
-    color: #c1c1c1;
-    font-family: "Open Sans";
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.8px;
-    margin: 0px 0px 20px 0px;
-    position: relative;
-}
-
-.title_growth_purple::before {
-    margin-right: 10px;
-    color: #9173e6;
-    ;
-    font-family: "Open Sans";
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.9px;
-    padding-top: 6px;
-}
-
-.description {
-    color: #000000;
-    font-family: "Open Sans";
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-
-.item_connection {
-    background-color: #ffffff;
-}
-
-.item_collaboration {
-    background-color: #f6f4fa;
-}
-
-.item_growth {
-    background-color: #5e42b0;
-}
-
-.description_growth {
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 1px;
-}
-
-.item_athlets {
-    padding: 60px 180px 55px 1010px;
-}
-
-.players_news {
-    box-sizing: border-box;
-    position: relative;
-}
-
-.item_players {
-    padding: 60px 980px 55px 190px;
-}
-
-.players {
-    color: #e7e7e7;
-    font-family: "Open Sans";
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 0px;
-    text-transform: uppercase;
-    margin: 115px 0px 48px 0px;
-    padding-left: 190px;
-}
-
-.item_growth_dark {
-    background-color: #0a0e34;
-}
-
-.basketball {
-    position: absolute;
-    right: 115px;
-    top: -120px;
-}
-
-.card {
-    display: flex;
-    position: relative;
-}
-
-.card_description {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    box-sizing: border-box;
-    padding: 260px 15px 0px 15px;
-    margin-left: 114px;
-    background-color: #ffffff;
-}
-
-.card_title {
-    margin: 0px;
-    opacity: 0.4;
-    color: #c1c1c1;
-    font-family: "Open Sans";
-    font-size: 80px;
-    font-weight: 700;
-    line-height: 60px;
-    text-transform: uppercase;
-}
-
-.card_text {
-    width: 645px;
-    color: #000000;
-    font-family: "Open Sans";
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 1.2px;
-    padding-top: 115px;
-}
-
-.number_box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: 700;
-    width: 168px;
-    height: 155px;
-    background-color: #5e42b0;
-    position: absolute;
-    top: 215px;
-    left: 875px;
-}
-
-.number_box::after {
-    content: "";
-    width: 21px;
-    height: 5px;
-    border-radius: 2px;
-    background-color: #ffffff;
-    opacity: 0.3;
-    position: absolute;
-    left: 73px;
-    top: 95px;
-}
-
-.footer {
-    width: 1920px;
-    background-image: url("mq-diploma-master/sources/img/game_1920.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    position: relative;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 280px;
-    box-sizing: border-box;
-    padding-bottom: 52px;
-}
-
-.footer::after {
-    content: "";
-    background-color: #0a0e34;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.9;
-}
-
-.main_footer_text {
-    display: flex;
-    justify-content: center;
-}
-
-.footer_title {
-    color: #ffffff;
-    font-family: "Open Sans";
-    font-size: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 4.41px;
-    height: 60px;
-    margin: 0px 0px 30px 0px;
-}
-
-.footer_subtitle {
-    color: #a496ca;
-    font-family: "Open Sans";
-    font-size: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.footer_text {
-    margin-left: 37px;
-}
-
-.footer_logo {
-    width: 191px;
-    margin-top: 262px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.download_links_footer {
-    margin-top: 163px;
-}
-
-@media (max-width: 768px) {
+    @font-face {
+        font-family: "Open Sans";
+        src: url("mq-diploma-master/sources/fonts/OpenSans-Regular.woff");
+        font-style: normal;
+        font-weight: 400;
+    }
+    
+    @font-face {
+        font-family: "Open Sans";
+        src: url("mq-diploma-master/sources/fonts/OpenSans-Bold.woff");
+        font-style: normal;
+        font-weight: 700;
+    }
+    
+    body {
+        font-family: "Open Sans", Arial, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    img {
+        display: block;
+    }
+    
+    .header {
+        width: 1920px;
+        background-image: url("mq-diploma-master/sources/img/football_1920.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 45px;
+        padding-bottom: 110px;
+    }
+    
+    .header::after {
+        content: "";
+        background-color: #0a0e34;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.9;
+    }
+    
+    .container {
+        position: relative;
+        z-index: 1;
+        width: 1560px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    
+    .header_logo {
+        width: 191px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .main_text {
+        margin-top: 295px;
+    }
+    
+    .main_title {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 90px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4.96px;
+        line-height: 100px;
+    }
+    
+    .first_row {
+        display: inline-block;
+        width: 690px;
+        margin: 0px;
+    }
+    
+    .second_row {
+        display: inline-block;
+        width: 1100px;
+        margin-left: 455px;
+    }
+    
+    .download_links {
+        display: flex;
+        justify-content: center;
+        margin-top: 222px;
+    }
+    
+    .download_button {
+        display: flex;
+        vertical-align: middle;
+        width: 311px;
+        height: 77px;
+        border: none;
+        background-color: #5e42b0;
+        border-radius: 50px;
+    }
+    
+    .download_button:nth-child(n+2) {
+        margin-left: 50px;
+    }
+    
+    .download_icon {
+        display: flex;
+        margin: 0px 25px 0px 30px;
+    }
+    
+    .apple_icon,
+    .google_icon {
+        width: 42px;
+        height: 48px;
+    }
+    
+    .apple_download,
+    .google_download {
+        display: flex;
+        width: 100px;
+        flex-direction: column;
+        align-self: center;
+    }
+    
+    .apple_line1,
+    .google_line1 {
+        min-width: 147px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        text-align: left;
+    }
+    
+    .apple_line2,
+    .google_line2 {
+        min-width: 105px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        text-align: left;
+    }
+    
+    .download_button {
+        cursor: pointer;
+    }
+    
+    .athlets_news {
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .football {
+        position: absolute;
+        left: 350px;
+        top: -100px;
+    }
+    
+    .content {
+        width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .athlets {
+        color: #e7e7e7;
+        margin: 115px 0px 48px 0px;
+        font-family: "Open Sans";
+        font-size: 80px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 0;
+        padding-left: 1010px;
+    }
+    
+    .athlets_section {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .title_connection,
+    .title_collaboration,
+    .title_growth {
+        display: flex;
+        color: #c1c1c1;
+        font-family: "Open Sans";
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        margin: 0px 0px 20px 0px;
+        position: relative;
+    }
+    
+    .title_connection::before {
+        content: "01";
+    }
+    
+    .title_collaboration::before {
+        content: "02";
+    }
+    
+    .title_growth::before {
+        content: "03";
+    }
+    
+    .title_connection::before,
+    .title_collaboration::before,
+    .title_growth::before {
+        margin-right: 10px;
+        color: #000000;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        padding-top: 8px;
+    }
+    
+    .title_connection::after,
+    .title_collaboration::after {
+        content: "";
+        width: 21px;
+        height: 5px;
+        background-color: #5e42b0;
+        border-radius: 2px;
+        position: absolute;
+        top: 32px;
+    }
+    
+    .title_growth::after {
+        content: "";
+        width: 21px;
+        height: 5px;
+        background-color: #efefef;
+        border-radius: 2px;
+        position: absolute;
+        top: 32px;
+    }
+    
+    .title_growth_purple {
+        display: flex;
+        color: #c1c1c1;
+        font-family: "Open Sans";
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.8px;
+        margin: 0px 0px 20px 0px;
+        position: relative;
+    }
+    
+    .title_growth_purple::before {
+        margin-right: 10px;
+        color: #9173e6;
+        ;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.9px;
+        padding-top: 6px;
+    }
+    
+    .description {
+        color: #000000;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    
+    .item_connection {
+        background-color: #ffffff;
+    }
+    
+    .item_collaboration {
+        background-color: #f6f4fa;
+    }
+    
+    .item_growth {
+        background-color: #5e42b0;
+    }
+    
+    .description_growth {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+    
+    .item_athlets {
+        padding: 60px 180px 55px 1010px;
+    }
+    
+    .players_news {
+        box-sizing: border-box;
+        position: relative;
+    }
+    
+    .item_players {
+        padding: 60px 980px 55px 190px;
+    }
+    
+    .players {
+        color: #e7e7e7;
+        font-family: "Open Sans";
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 0px;
+        text-transform: uppercase;
+        margin: 115px 0px 48px 0px;
+        padding-left: 190px;
+    }
+    
+    .item_growth_dark {
+        background-color: #0a0e34;
+    }
+    
+    .basketball {
+        position: absolute;
+        right: 115px;
+        top: -120px;
+    }
+    
+    .card {
+        display: flex;
+        position: relative;
+    }
+    
+    .card_description {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 260px 15px 0px 15px;
+        margin-left: 114px;
+        background-color: #ffffff;
+    }
+    
+    .card_title {
+        margin: 0px;
+        opacity: 0.4;
+        color: #c1c1c1;
+        font-family: "Open Sans";
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+    
+    .card_text {
+        width: 645px;
+        color: #000000;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 1.2px;
+        padding-top: 115px;
+    }
+    
+    .number_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        width: 168px;
+        height: 155px;
+        background-color: #5e42b0;
+        position: absolute;
+        top: 215px;
+        left: 875px;
+    }
+    
+    .number_box::after {
+        content: "";
+        width: 21px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        opacity: 0.3;
+        position: absolute;
+        left: 73px;
+        top: 95px;
+    }
+    
+    .footer {
+        width: 1920px;
+        background-image: url("mq-diploma-master/sources/img/game_1920.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        position: relative;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 280px;
+        box-sizing: border-box;
+        padding-bottom: 52px;
+    }
+    
+    .footer::after {
+        content: "";
+        background-color: #0a0e34;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.9;
+    }
+    
+    .main_footer_text {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer_title {
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 80px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 4.41px;
+        height: 60px;
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .footer_subtitle {
+        color: #a496ca;
+        font-family: "Open Sans";
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .footer_text {
+        margin-left: 37px;
+    }
+    
+    .footer_logo {
+        width: 191px;
+        margin-top: 262px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .download_links_footer {
+        margin-top: 163px;
+    }
+    /* @media (max-width: 768px) {
     .header {
         width: 768px;
         background-image: url("mq-diploma-master/sources/img/football_767.jpg");
@@ -490,209 +489,336 @@ img {
     }
 }
 
-@media (max-width: 768px) {
-    .card {
-        flex-wrap: wrap;
-    }
-    .be_active,
-    .find_contact,
-    .work_it {
-        width: 100%;
-    }
-    .card_description_find {
-        order: 1;
-    }
-    .find_contact,
-    .work_it {
-        margin-top: 100px;
-    }
-    .card_description {
-        padding: 85px 15px 0px 15px;
-        margin-left: 18px;
-    }
-    .card_text {
-        padding-top: 37px;
-    }
-    .number_box {
-        top: 480px;
-        left: 40px;
-    }
-    .number_box_active {
-        top: 580px;
-        left: 40px;
-    }
-}
 
 @media (max-width: 768px) {
-    body {
-        width: 768px;
-    }
-    .content {
-        width: 768px;
-    }
-    .athlets_news {
-        width: 768px;
-    }
-    .item_athlets {
-        padding: 60px 40px 55px 280px;
-    }
-    .athlets {
-        padding-left: 280px;
-        margin: 85px 0px 48px 0px;
-    }
-    .athlets_title_connection,
-    .athlets_title_collaboration,
-    .athlets_title_growth {
-        font-size: 32px;
-    }
-    .description,
-    .description_growth {
-        font-size: 16px;
-        letter-spacing: 0.8px;
-    }
-    .football {
-        left: -163px;
-        top: 10px;
-    }
+.card {
+flex-wrap: wrap;
+}
+.be_active,
+.find_contact,
+.work_it {
+width: 100%;
+}
+.card_description_find {
+order: 1;
+}
+.find_contact,
+.work_it {
+margin-top: 100px;
+}
+.card_description {
+padding: 85px 15px 0px 15px;
+margin-left: 18px;
+}
+.card_text {
+padding-top: 37px;
+}
+.number_box {
+top: 480px;
+left: 40px;
+}
+.number_box_active {
+top: 580px;
+left: 40px;
+}
 }
 
 @media (max-width: 768px) {
-    .players_news {
-        width: 768px;
-    }
-    .item_players {
-        padding: 60px 330px 55px 34px;
-    }
-    .players {
-        padding-left: 34px;
-        margin: 85px 0px 48px 0px;
-    }
-    .players_title_connection,
-    .players_title_collaboration,
-    .players_title_growth {
-        font-size: 32px;
-    }
-    .description,
-    .description_growth {
-        font-size: 16px;
-        letter-spacing: 0.8px;
-    }
-    .basketball {
-        top: -35px;
-        right: 0;
-    }
+body {
+width: 768px;
+}
+.content {
+width: 768px;
+}
+.athlets_news {
+width: 768px;
+}
+.item_athlets {
+padding: 60px 40px 55px 280px;
+}
+.athlets {
+padding-left: 280px;
+margin: 85px 0px 48px 0px;
+}
+.athlets_title_connection,
+.athlets_title_collaboration,
+.athlets_title_growth {
+font-size: 32px;
+}
+.description,
+.description_growth {
+font-size: 16px;
+letter-spacing: 0.8px;
+}
+.football {
+left: -163px;
+top: 10px;
+}
 }
 
 @media (max-width: 768px) {
-    .footer {
-        width: 768px;
-        background-image: url("mq-diploma-master/sources/img/game_767.jpg");
-        margin-top: 110px;
-        padding-top: 128px;
-        margin-bottom: 0px;
-        box-sizing: border-box;
-    }
-    .container {
-        width: 714px;
-    }
-    .main_footer_text {
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    .footer_text {
-        margin-left: 0px;
-        margin-top: 82px;
-    }
-    .footer_subtitle {
-        font-size: 36px;
-    }
-    .download_links_footer {
-        margin-top: 250px;
-    }
-    .footer_logo {
-        width: 205px;
-        margin-top: 100px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.players_news {
+width: 768px;
+}
+.item_players {
+padding: 60px 330px 55px 34px;
+}
+.players {
+padding-left: 34px;
+margin: 85px 0px 48px 0px;
+}
+.players_title_connection,
+.players_title_collaboration,
+.players_title_growth {
+font-size: 32px;
+}
+.description,
+.description_growth {
+font-size: 16px;
+letter-spacing: 0.8px;
+}
+.basketball {
+top: -35px;
+right: 0;
+}
 }
 
-@media (max-width: 320px) {
-    .header {
-        background-image: url("mq-diploma-master/sources/img/football_767.jpg");
-        width: 320px;
-    }
-    .header_logo {
-        width: 133px;
-    }
-    .container {
-        width: 280px;
-    }
-    .main_text {
-        margin-top: 136px;
-    }
-    .second_row {
-        margin-left: 47px;
-        margin-top: 30px;
-        width: 214px;
-    }
-    .main_title {
-        color: #ffffff;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 31.32px;
-        text-transform: uppercase;
-        letter-spacing: 1.54px;
-        width: 260px;
-    }
-    .download_links {
-        flex-wrap: wrap;
-        margin-top: 90px;
-    }
-    .download_button {
-        display: flex;
-        vertical-align: middle;
-        width: 280px;
-        height: 35px;
-        border: none;
-        background-color: #5e42b0;
-        border-radius: 50px;
-        justify-content: center;
-    }
-    .download_button:nth-child(n+2) {
-        margin-left: 0px;
-        margin-top: 15px;
-    }
-    .apple_icon,
-    .google_icon {
-        width: 22px;
-        height: 24px;
-    }
-    .apple_line1,
-    .google_line1 {
-        font-size: 8px;
-        letter-spacing: 0.4px;
-        text-align: left;
-    }
-    .apple_line2,
-    .google_line2 {
-        font-size: 8px;
-        letter-spacing: 0.4px;
-        text-align: left;
-    }
+@media (max-width: 768px) {
+.footer {
+width: 768px;
+background-image: url("mq-diploma-master/sources/img/game_767.jpg");
+margin-top: 110px;
+padding-top: 128px;
+margin-bottom: 0px;
+box-sizing: border-box;
 }
-
-@media (max-width: 320px) {
-    .athlets {
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 0px;
-        padding-left: 21px;
-        margin-top: 45px;
-        margin-bottom: 20px;
-    }
-    .football {
-        left: 0;
-        top: 0;
-    }
+.container {
+width: 714px;
 }
+.main_footer_text {
+flex-wrap: wrap;
+text-align: center;
+}
+.footer_text {
+margin-left: 0px;
+margin-top: 82px;
+}
+.footer_subtitle {
+font-size: 36px;
+}
+.download_links_footer {
+margin-top: 250px;
+}
+.footer_logo {
+width: 205px;
+margin-top: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+} */
+    
+    @media (max-width: 320px) {
+        .header {
+            background-image: url("mq-diploma-master/sources/img/football_767.jpg");
+            width: 320px;
+        }
+        .header_logo {
+            width: 133px;
+        }
+        .container {
+            width: 280px;
+        }
+        .main_text {
+            margin-top: 136px;
+        }
+        .second_row {
+            margin-left: 47px;
+            margin-top: 30px;
+            width: 214px;
+        }
+        .main_title {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 31.32px;
+            text-transform: uppercase;
+            letter-spacing: 1.54px;
+            width: 260px;
+        }
+        .download_links {
+            flex-wrap: wrap;
+            margin-top: 90px;
+        }
+        .download_button {
+            display: flex;
+            vertical-align: middle;
+            width: 280px;
+            height: 35px;
+            border: none;
+            background-color: #5e42b0;
+            border-radius: 50px;
+            justify-content: center;
+        }
+        .download_button:nth-child(n+2) {
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+        .apple_icon,
+        .google_icon {
+            width: 22px;
+            height: 24px;
+        }
+        .apple_line1,
+        .google_line1 {
+            font-size: 8px;
+            letter-spacing: 0.4px;
+            text-align: left;
+        }
+        .apple_line2,
+        .google_line2 {
+            font-size: 8px;
+            letter-spacing: 0.4px;
+            text-align: left;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .content {
+            width: 320px;
+            padding-top: 45px;
+        }
+        .athlets_news,
+        .players_news {
+            width: 320px;
+        }
+        .athlets_news {
+            padding-bottom: 55px;
+        }
+        .players_news {
+            padding-bottom: 0px;
+        }
+        .athlets,
+        .players {
+            font-size: 50px;
+            line-height: 0px;
+            padding-left: 20px;
+            margin: 0px;
+        }
+        .football {
+            left: 65px;
+            top: 35px;
+        }
+        .item_connection {
+            padding: 330px 20px 50px 20px;
+        }
+        .item_collaboration,
+        .item_growth {
+            padding: 60px 20px 50px 20px;
+        }
+        .title_connection,
+        .title_collaboration,
+        .title_growth {
+            font-size: 23px;
+            letter-spacing: 1.15px;
+        }
+        .title_connection::before,
+        .title_collaboration::before,
+        .title_growth::before {
+            margin-right: 6px;
+            padding-top: 3px;
+            font-size: 14px;
+            letter-spacing: 0.7px;
+        }
+        .title_connection::after,
+        .title_collaboration::after,
+        .title_growth::after {
+            content: "";
+            width: 15px;
+            height: 4px;
+            top: 21px;
+        }
+        .description,
+        .description_growth {
+            font-size: 15px;
+            letter-spacing: 0.75px;
+        }
+        .basketball {
+            left: 10px;
+            top: 40px;
+        }
+        .card {
+            width: 320px;
+            flex-wrap: wrap;
+        }
+        .be_active_picture,
+        .find_contact_picture,
+        .work_it_picture {
+            width: 100%;
+        }
+        .card_description {
+            width: 100%;
+            margin-left: 0px;
+            padding-top: 33px;
+            padding-bottom: 77px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .card_title {
+            font-size: 28px;
+            letter-spacing: 1.4px;
+        }
+        .card_text {
+            width: 100%;
+            font-size: 16px;
+            letter-spacing: 0.8px;
+            padding-top: 23px;
+        }
+        .card_description_find {
+            order: 1;
+        }
+        .number_box {
+            width: 70px;
+            height: 70px;
+            font-size: 14px;
+            letter-spacing: 0.7px;
+            top: 295px;
+            left: 20px;
+        }
+        .number_box::after {
+            content: "";
+            width: 15px;
+            height: 4px;
+            background-color: #ffffff;
+            left: 27px;
+            top: 45px;
+        }
+        .footer {
+            background-image: url("mq-diploma-master/sources/img/game_767.jpg");
+            width: 320px;
+            padding-top: 100px;
+        }
+        .footer_title {
+            font-size: 32px;
+            letter-spacing: 1.3px;
+            margin-bottom: 0px;
+            height: 43px;
+        }
+        .footer_subtitle {
+            font-size: 14px;
+            letter-spacing: 0.7px;
+        }
+        .main_footer_text {
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .footer_text {
+            margin-left: 0px;
+            margin-top: 60px;
+        }
+        .download_links {
+            margin-top: 76px;
+        }
+        .footer_logo {
+            margin-top: 82px;
+        }
+    }
