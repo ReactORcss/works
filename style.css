@@ -680,9 +680,6 @@ margin-right: auto;
             letter-spacing: 0.4px;
             text-align: left;
         }
-    }
-    
-    @media (max-width: 320px) {
         .content {
             width: 320px;
             padding-top: 45px;
