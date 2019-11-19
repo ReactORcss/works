@@ -796,6 +796,7 @@ margin-right: auto;
             background-image: url("mq-diploma-master/sources/img/game_767.jpg");
             width: 320px;
             padding-top: 100px;
+            padding-bottom: 10px;
         }
         .footer_title {
             font-size: 32px;
