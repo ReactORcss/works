@@ -1,838 +1,836 @@
-    @font-face {
-        font-family: "Open Sans";
-        src: url("mq-diploma-master/sources/fonts/OpenSans-Regular.woff");
-        font-style: normal;
-        font-weight: 400;
-    }
-    
-    @font-face {
-        font-family: "Open Sans";
-        src: url("mq-diploma-master/sources/fonts/OpenSans-Bold.woff");
-        font-style: normal;
-        font-weight: 700;
-    }
-    
+@font-face {
+    font-family: "Open Sans";
+    src: url("mq-diploma-master/sources/fonts/OpenSans-Regular.woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("mq-diploma-master/sources/fonts/OpenSans-Bold.woff");
+    font-style: normal;
+    font-weight: 700;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+img {
+    display: block;
+}
+
+.header {
+    width: 100%;
+    background-image: url("mq-diploma-master/sources/img/football_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2.34%;
+    padding-bottom: 5.7%;
+}
+
+.header::after {
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 81.25%;
+    margin: 0% auto;
+    padding: 0%;
+}
+
+.header_logo {
+    width: 9.95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main_text {
+    margin-top: 18.9%;
+}
+
+.main_title {
+    color: #ffffff;
+    font-size: 4.69vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4.96px;
+    line-height: 1.1;
+}
+
+.first_row {
+    display: inline-block;
+    width: 100%;
+    margin: 0%;
+}
+
+.second_row {
+    display: inline-block;
+    margin-left: 22.2%;
+}
+
+.download_links {
+    display: flex;
+    justify-content: center;
+    margin-top: 14.23%;
+}
+
+.download_button {
+    align-items: center;
+    display: flex;
+    vertical-align: middle;
+    width: 311px;
+    height: 77px;
+    border: none;
+    background-color: #5e42b0;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+.download_button:hover,
+.download_button:focus {
+    background-color: #d16a54;
+    transition: 0.5s ease-in-out;
+}
+
+.download_button:nth-child(n+2) {
+    margin-left: 3.2%;
+}
+
+.apple_icon,
+.google_icon {
+    width: 42px;
+    height: 48px;
+    margin-left: 38px;
+    margin-right: 25px;
+}
+
+.apple_lines,
+.google_lines {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    text-align: left;
+}
+
+.apple_line2,
+.google_line2 {
+    font-weight: 700;
+}
+
+.athlets_news {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+.football {
+    position: absolute;
+    left: 20%;
+    top: -7%;
+    width: 29.5%;
+}
+
+.footballer,
+.basketballer {
+    width: 100%;
+}
+
+.athlets {
+    color: #e7e7e7;
+    margin: 7.4% 0% 3.1% 0%;
+    font-size: 4.17vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0;
+    padding-left: 52.7%;
+}
+
+.athlets_section {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.title_connection,
+.title_collaboration,
+.title_growth {
+    display: flex;
+    color: #c1c1c1;
+    font-size: 1.88vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin: 0px 0px 1.28% 0px;
+    position: relative;
+}
+
+.title_connection::before {
+    content: "01";
+}
+
+.title_collaboration::before {
+    content: "02";
+}
+
+.title_growth::before {
+    content: "03";
+}
+
+.title_connection::before,
+.title_collaboration::before,
+.title_growth::before {
+    margin-right: 0.64%;
+    color: #000000;
+    font-size: 0.94vw;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    padding-top: 0.91%;
+}
+
+.title_connection::after,
+.title_collaboration::after {
+    content: "";
+    width: 2.65%;
+    height: 5px;
+    background-color: #5e42b0;
+    border-radius: 2px;
+    position: absolute;
+    top: 70%;
+    left: 0.2%;
+}
+
+.title_growth::after {
+    content: "";
+    width: 2.65%;
+    height: 5px;
+    background-color: #efefef;
+    border-radius: 2px;
+    position: absolute;
+    top: 70%;
+    left: 0.2%;
+}
+
+.title_growth_purple {
+    display: flex;
+    color: #c1c1c1;
+    font-size: 1.86vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+}
+
+.title_growth_purple::before {
+    margin-right: 0.64%;
+    color: #9173e6;
+    font-size: 0.94vw;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    padding-top: 0.71%;
+}
+
+.item_athlets {
+    padding: 3.85% 9% 3.53% 52.7%;
+}
+
+.description {
+    color: #000000;
+    font-size: 1.04vw;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.item_connection {
+    background-color: #ffffff;
+}
+
+.item_collaboration {
+    background-color: #f6f4fa;
+}
+
+.item_growth {
+    background-color: #5e42b0;
+}
+
+.description_growth {
+    color: #ffffff;
+    font-size: 1.04vw;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.players_news {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.item_players {
+    padding: 3.85% 50% 3.53% 9.18%;
+}
+
+.players {
+    color: #e7e7e7;
+    font-size: 4.17vw;
+    font-weight: 700;
+    line-height: 0px;
+    text-transform: uppercase;
+    margin: 8.37% 0% 3.08% 0%;
+    padding-left: 9.18%;
+}
+
+.item_growth_dark {
+    background-color: #0a0e34;
+}
+
+.basketball {
+    position: absolute;
+    right: 7%;
+    top: -15%;
+    width: 51.6%;
+}
+
+.card {
+    display: flex;
+    position: relative;
+}
+
+.card_description {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 12% 10% 0% 7%;
+    background-color: #ffffff;
+}
+
+.be_active,
+.find_contact,
+.work_it {
+    width: 50%;
+    position: relative;
+}
+
+.be_active_picture,
+.find_contact_picture,
+.work_it_picture {
+    width: 100%;
+}
+
+.card_title {
+    margin: 0px;
+    opacity: 0.4;
+    color: #c1c1c1;
+    font-size: 4.17vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card_text {
+    color: #000000;
+    font-size: 1.25vw;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+    padding-top: 13%;
+}
+
+.number_box,
+.number_box_find {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25vw;
+    font-weight: 700;
+    width: 17.5%;
+    height: 21.23%;
+    background-color: #5e42b0;
+    position: absolute;
+    top: 28%;
+    left: 91.3%;
+}
+
+.number_box::after,
+.number_box_find::after {
+    content: "";
+    width: 14%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    opacity: 0.3;
+    position: absolute;
+    left: 43%;
+    top: 60%;
+}
+
+.number_box_find {
+    left: -9%;
+    top: 28%;
+}
+
+.footer {
+    width: 100%;
+    background-image: url("mq-diploma-master/sources/img/game_1920.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 12%;
+    box-sizing: border-box;
+    padding-bottom: 2.7%;
+}
+
+.footer::after {
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.9;
+}
+
+.main_footer_text {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_title {
+    color: #ffffff;
+    font-size: 4.17vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 90px;
+    margin: 0px 0px 0px 0px;
+    letter-spacing: 0px;
+    padding-bottom: 2%;
+}
+
+.footer_subtitle {
+    color: #a496ca;
+    font-size: 1.56vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.footer_text {
+    margin-left: 1.93%;
+}
+
+.footer_logo {
+    width: 9.95%;
+    margin-top: 13.65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download_links_footer {
+    margin-top: 7.8%;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
     body {
-        font-family: "Open Sans", Arial, sans-serif;
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
         width: 100%;
     }
-    
-    img {
-        display: block;
-    }
-    
     .header {
         width: 100%;
-        background-image: url("mq-diploma-master/sources/img/football_1920.jpg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        position: relative;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 2.34%;
-        padding-bottom: 5.7%;
+        background-image: url("mq-diploma-master/sources/img/football_767.jpg");
+        padding-top: 5.21%;
     }
-    
-    .header::after {
-        content: "";
-        background-color: #0a0e34;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.9;
-    }
-    
     .container {
-        position: relative;
-        z-index: 1;
-        width: 81.25%;
-        margin: 0% auto;
-        padding: 0%;
+        /* width: 714px; */
+        width: 93.1%;
     }
-    
     .header_logo {
-        width: 9.95%;
+        width: 26.7%;
         margin-left: auto;
         margin-right: auto;
     }
-    
     .main_text {
-        margin-top: 18.9%;
+        margin-top: 23.4%;
     }
-    
     .main_title {
-        color: #ffffff;
-        font-size: 4.69vw;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 4.96px;
-        line-height: 1.1;
-    }
-    
-    .first_row {
-        display: inline-block;
         width: 100%;
-        margin: 0%;
+        font-size: 8.33vw;
     }
-    
     .second_row {
-        display: inline-block;
-        margin-left: 22.2%;
+        width: 85%;
+        margin-left: 15%;
     }
-    
-    .download_links {
-        display: flex;
-        justify-content: center;
-        margin-top: 14.23%;
-    }
-    
-    .download_button {
-        display: flex;
-        vertical-align: middle;
-        width: 311px;
-        height: 77px;
-        border: none;
-        background-color: #5e42b0;
-        border-radius: 50px;
-        cursor: pointer;
-        outline: none;
-        transition: 0.5s ease-in-out;
-    }
-    
-    .download_button:hover,
-    .download_button:focus {
-        background-color: #d16a54;
-        transition: 0.5s ease-in-out;
-    }
-    
-    .download_button:nth-child(n+2) {
-        margin-left: 3.2%;
-    }
-    
-    .apple_icon,
-    .google_icon {
-        width: 42px;
-        height: 48px;
-        margin-left: 38px;
-        margin-right: 25px;
-    }
-    
-    .apple_lines,
-    .google_lines {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        color: #ffffff;
-        font-family: "Open Sans";
-        font-size: 14px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.7px;
-        text-align: left;
-    }
-    
-    .apple_line2,
-    .google_line2 {
-        font-weight: 700;
-    }
-    
-    .athlets_news {
-        box-sizing: border-box;
-        position: relative;
-        width: 100%;
-    }
-    
-    .football {
-        position: absolute;
-        left: 20%;
-        top: -7%;
-        width: 29.5%;
-    }
-    
-    .footballer,
-    .basketballer {
-        width: 100%;
-    }
-    
-    .athlets {
-        color: #e7e7e7;
-        margin: 7.4% 0% 3.1% 0%;
-        font-size: 4.17vw;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: 0;
-        padding-left: 52.7%;
-    }
-    
-    .athlets_section {
-        list-style-type: none;
-        padding: 0%;
-        margin: 0%;
-    }
-    
-    .title_connection,
-    .title_collaboration,
-    .title_growth {
-        display: flex;
-        color: #c1c1c1;
-        font-size: 1.88vw;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1.8px;
-        margin: 0px 0px 1.28% 0px;
-        position: relative;
-    }
-    
-    .title_connection::before {
-        content: "01";
-    }
-    
-    .title_collaboration::before {
-        content: "02";
-    }
-    
-    .title_growth::before {
-        content: "03";
-    }
-    
-    .title_connection::before,
-    .title_collaboration::before,
-    .title_growth::before {
-        margin-right: 0.64%;
-        color: #000000;
-        font-size: 0.94vw;
-        font-weight: 700;
-        letter-spacing: 0.9px;
-        padding-top: 0.91%;
-    }
-    
-    .title_connection::after,
-    .title_collaboration::after {
-        content: "";
-        width: 2.65%;
-        height: 5px;
-        background-color: #5e42b0;
-        border-radius: 2px;
-        position: absolute;
-        top: 70%;
-        left: 0.2%;
-    }
-    
-    .title_growth::after {
-        content: "";
-        width: 2.65%;
-        height: 5px;
-        background-color: #efefef;
-        border-radius: 2px;
-        position: absolute;
-        top: 70%;
-        left: 0.2%;
-    }
-    
-    .title_growth_purple {
-        display: flex;
-        color: #c1c1c1;
-        font-size: 1.86vw;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1.8px;
-        margin: 0px 0px 20px 0px;
-        position: relative;
-    }
-    
-    .title_growth_purple::before {
-        margin-right: 0.64%;
-        color: #9173e6;
-        font-size: 0.94vw;
-        font-weight: 700;
-        letter-spacing: 0.9px;
-        padding-top: 0.71%;
-    }
-    
-    .item_athlets {
-        padding: 3.85% 9% 3.53% 52.7%;
-    }
-    
-    .description {
-        color: #000000;
-        font-size: 1.04vw;
-        font-weight: 400;
-        letter-spacing: 1px;
-    }
-    
-    .item_connection {
-        background-color: #ffffff;
-    }
-    
-    .item_collaboration {
-        background-color: #f6f4fa;
-    }
-    
-    .item_growth {
-        background-color: #5e42b0;
-    }
-    
-    .description_growth {
-        color: #ffffff;
-        font-size: 1.04vw;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 1px;
-    }
-    
-    .players_news {
-        box-sizing: border-box;
-        position: relative;
-    }
-    
-    .item_players {
-        padding: 3.85% 50% 3.53% 9.18%;
-    }
-    
-    .players {
-        color: #e7e7e7;
-        font-size: 4.17vw;
-        font-weight: 700;
-        line-height: 0px;
-        text-transform: uppercase;
-        margin: 8.37% 0% 3.08% 0%;
-        padding-left: 9.18%;
-    }
-    
-    .item_growth_dark {
-        background-color: #0a0e34;
-    }
-    
-    .basketball {
-        position: absolute;
-        right: 7%;
-        top: -15%;
-        width: 51.6%;
-    }
-    
     .card {
-        display: flex;
-        position: relative;
+        flex-wrap: wrap;
     }
-    
-    .card_description {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        box-sizing: border-box;
-        padding: 12% 0% 0% 7%;
-        background-color: #ffffff;
-    }
-    
     .be_active,
     .find_contact,
     .work_it {
-        width: 50%;
+        width: 100%;
     }
-    
     .be_active_picture,
     .find_contact_picture,
     .work_it_picture {
         width: 100%;
     }
-    
+    .card_description_find {
+        order: 1;
+    }
+    .find_contact,
+    .work_it {
+        margin-top: 13%;
+    }
     .card_title {
-        margin: 0px;
-        opacity: 0.4;
-        color: #c1c1c1;
-        font-size: 4.17vw;
-        font-weight: 700;
-        text-transform: uppercase;
+        font-size: 10.42vw;
     }
-    
+    .card_description {
+        padding: 11.1% 4.95% 0% 4.95%;
+        margin-left: 0%;
+        width: 100%;
+    }
     .card_text {
-        width: 645px;
-        color: #000000;
-        font-size: 1.25vw;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 1.2px;
-        padding-top: 13%;
+        padding-top: 4.8%;
+        width: 100%;
+        font-size: 3.13vw;
     }
-    
     .number_box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 1.25vw;
-        font-weight: 700;
-        width: 168px;
-        height: 155px;
-        background-color: #5e42b0;
-        position: absolute;
-        top: 28%;
-        left: 45.5%;
+        top: 83%;
+        left: 5.21%;
+        font-size: 3.13vw;
     }
-    
-    .number_box::after {
-        content: "";
-        width: 14%;
-        height: 5px;
-        border-radius: 2px;
-        background-color: #ffffff;
-        opacity: 0.3;
-        position: absolute;
-        left: 43%;
-        top: 60%;
+    .content {
+        width: 100%;
     }
-    
+    .athlets_news {
+        width: 100%;
+    }
+    .item_athlets {
+        padding: 7.8% 5.2% 7.2% 36.5%;
+    }
+    .athlets {
+        padding-left: 36.5%;
+        margin: 11.1% 0% 6.25% 0%;
+        font-size: 10.42vw;
+    }
+    .title_connection,
+    .title_collaboration,
+    .title_growth {
+        font-size: 4.17vw;
+    }
+    .title_connection::before,
+    .title_collaboration::before,
+    .title_growth::before {
+        font-size: 2.34vw;
+    }
+    .title_connection::after,
+    .title_collaboration::after,
+    .title_growth::after {
+        width: 4.65%;
+    }
+    .description,
+    .description_growth {
+        font-size: 2.08vw;
+        letter-spacing: 0.8px;
+    }
+    .players_news {
+        width: 100%;
+    }
+    .item_players {
+        padding: 7.8% 43% 7.2% 4.4%;
+    }
+    .players {
+        padding-left: 4.4%;
+        margin: 11.1% 0% 6.25% 0%;
+        font-size: 10.42vw;
+    }
+    .description,
+    .description_growth {
+        font-size: 2.08vw;
+        letter-spacing: 0.8px;
+    }
+    .footballer {
+        width: 93%;
+    }
+    .basketballer {
+        width: 100%;
+    }
+    .football {
+        left: -163px;
+        top: 10px;
+        width: 64.7%;
+    }
+    .basketball {
+        top: -10%;
+        right: 0%;
+        width: 56.8%;
+    }
     .footer {
         width: 100%;
-        background-image: url("mq-diploma-master/sources/img/game_1920.jpg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        position: relative;
-        margin-right: auto;
-        margin-left: auto;
-        padding-top: 12%;
+        background-image: url("mq-diploma-master/sources/img/game_767.jpg");
+        margin-top: 14.3%;
+        padding-top: 16.7%;
+        margin-bottom: 0%;
         box-sizing: border-box;
-        padding-bottom: 2.7%;
     }
-    
-    .footer::after {
-        content: "";
-        background-color: #0a0e34;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.9;
-    }
-    
     .main_footer_text {
-        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer_text {
+        margin-left: 0%;
+        margin-top: 11.5%;
+    }
+    .footer_title {
+        font-size: 10.2vw;
+        margin: 0% 0% 4.9% 0%;
+    }
+    .footer_subtitle {
+        font-size: 4.5vw;
+    }
+    .download_links_footer {
+        margin-top: 35%;
+    }
+    .footer_logo {
+        width: 28.7%;
+        margin-top: 14%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        width: 100%;
+    }
+    .header {
+        background-image: url("mq-diploma-master/sources/img/football_767.jpg");
+        width: 100%;
+        padding-top: 14.1%;
+        padding-bottom: 34.4%;
+    }
+    .container {
+        width: 88.8%;
+    }
+    .header_logo {
+        width: 46.8%;
+    }
+    .main_text {
+        width: 95.1%;
+        margin-top: 47.9%;
+    }
+    .main_title {
+        width: 81.3%;
+        font-size: 8.75vw;
+        line-height: 1.19;
+        letter-spacing: 1.54px;
+    }
+    .second_row {
+        margin-left: 16.6%;
+        margin-top: 10.6%;
+        width: 100%;
+    }
+    .download_links {
+        flex-wrap: wrap;
+        margin-top: 31.7%;
+    }
+    .download_button {
+        width: 100%;
+        height: 35px;
         justify-content: center;
     }
-    
+    .download_button:nth-child(n+2) {
+        margin-left: 0%;
+        margin-top: 5.3%;
+    }
+    .apple_icon,
+    .google_icon {
+        width: 22px;
+        height: 24px;
+    }
+    .apple_line1,
+    .google_line1 {
+        font-size: 8px;
+        letter-spacing: 0.4px;
+        text-align: left;
+    }
+    .apple_line2,
+    .google_line2 {
+        font-size: 8px;
+        letter-spacing: 0.4px;
+        text-align: left;
+    }
+    .content {
+        width: 100%;
+        padding-top: 14.1%;
+    }
+    .athlets_news,
+    .players_news {
+        width: 100%;
+    }
+    .athlets_news {
+        padding-bottom: 17.2%;
+    }
+    .players_news {
+        padding-bottom: 0%;
+    }
+    .athlets,
+    .players {
+        font-size: 15.6vw;
+        line-height: 0px;
+        padding-left: 6.25%;
+        margin: 0%;
+    }
+    .football {
+        left: 17%;
+        top: 4%;
+        width: 60%;
+    }
+    .footballer,
+    .basketballer {
+        width: 100%;
+    }
+    .item_connection {
+        padding: 103.1% 6.25% 15.6% 6.25%;
+    }
+    .item_collaboration,
+    .item_growth {
+        padding: 18.75% 6.25% 15.6% 6.25%;
+    }
+    .title_connection,
+    .title_collaboration,
+    .title_growth {
+        font-size: 7.2vw;
+        letter-spacing: 1.15px;
+    }
+    .title_connection::before,
+    .title_collaboration::before,
+    .title_growth::before {
+        margin-right: 1.86%;
+        padding-top: 0.94%;
+        font-size: 4.36vw;
+        letter-spacing: 0.7px;
+    }
+    .title_connection::after,
+    .title_collaboration::after,
+    .title_growth::after {
+        content: "";
+        width: 4.69%;
+        height: 4px;
+        top: 66.56%;
+        left: 0.5%;
+    }
+    .description,
+    .description_growth {
+        font-size: 4.69vw;
+        letter-spacing: 0.75px;
+    }
+    .basketball {
+        left: 4%;
+        top: 4%;
+        width: 94.4%;
+    }
+    .card {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .be_active_picture,
+    .find_contact_picture,
+    .work_it_picture {
+        width: 200%;
+    }
+    .card_description {
+        width: 100%;
+        margin-left: 0%;
+        padding-top: 10.3%;
+        padding-bottom: 24.1%;
+        padding-right: 6.25%;
+        padding-left: 6.25%;
+    }
+    .card_title {
+        font-size: 8.75vw;
+        letter-spacing: 1.4px;
+    }
+    .card_text {
+        width: 100%;
+        font-size: 5vw;
+        letter-spacing: 0.8px;
+        padding-top: 7.2%;
+    }
+    .card_description_find {
+        order: 1;
+    }
+    .number_box {
+        width: 50%;
+        height: 22%;
+        font-size: 4.38vw;
+        letter-spacing: 0.7px;
+        top: 83%;
+        left: 10%;
+    }
+    .number_box::after {
+        content: "";
+        width: 20%;
+        height: 5px;
+        background-color: #ffffff;
+        left: 39%;
+        top: 60%;
+    }
+    .footer {
+        background-image: url("mq-diploma-master/sources/img/game_767.jpg");
+        width: 100%;
+        padding-top: 31.25%;
+        padding-bottom: 3.13%;
+    }
     .footer_title {
-        color: #ffffff;
-        font-size: 4.17vw;
-        font-weight: 700;
-        text-transform: uppercase;
-        height: 90px;
-        margin: 0px 0px 0px 0px;
-        letter-spacing: 0px;
-        padding-bottom: 2%;
+        font-size: 10vw;
+        letter-spacing: 1.1px;
+        margin-bottom: 0%;
     }
-    
     .footer_subtitle {
-        color: #a496ca;
-        font-size: 1.56vw;
-        font-weight: 400;
-        text-transform: uppercase;
+        font-size: 4.4vw;
+        letter-spacing: 0.7px;
     }
-    
+    .main_footer_text {
+        flex-wrap: wrap;
+        text-align: center;
+    }
     .footer_text {
-        margin-left: 1.93%;
+        margin-left: 0%;
+        margin-top: 18.75%;
     }
-    
+    .download_links {
+        margin-top: 23.75%;
+    }
     .footer_logo {
-        width: 9.95%;
-        margin-top: 13.65%;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 25.6%;
+        width: 46.8%;
     }
-    
-    .download_links_footer {
-        margin-top: 7.8%;
-    }
-    
-    @media (min-width: 961px) and (max-width: 1500px) {
-        .number_box {
-            display: none;
-        }
-    }
-    
-    @media (min-width: 641px) and (max-width: 960px) {
-        body {
-            width: 100%;
-        }
-        .header {
-            width: 100%;
-            background-image: url("mq-diploma-master/sources/img/football_767.jpg");
-            padding-top: 5.21%;
-        }
-        .container {
-            /* width: 714px; */
-            width: 93.1%;
-        }
-        .header_logo {
-            width: 26.7%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .main_text {
-            margin-top: 23.4%;
-        }
-        .main_title {
-            width: 100%;
-            font-size: 8.33vw;
-        }
-        .second_row {
-            width: 85%;
-            margin-left: 15%;
-        }
-        .card {
-            flex-wrap: wrap;
-        }
-        .be_active,
-        .find_contact,
-        .work_it {
-            width: 100%;
-        }
-        .be_active_picture,
-        .find_contact_picture,
-        .work_it_picture {
-            width: 100%;
-        }
-        .card_description_find {
-            order: 1;
-        }
-        .find_contact,
-        .work_it {
-            margin-top: 13%;
-        }
-        .card_title {
-            font-size: 10.42vw;
-        }
-        .card_description {
-            padding: 11.1% 4.95% 0% 4.95%;
-            margin-left: 0%;
-            width: 100%;
-        }
-        .card_text {
-            padding-top: 4.8%;
-            width: 100%;
-            font-size: 3.13vw;
-        }
-        .number_box {
-            top: 480px;
-            left: 40px;
-            font-size: 3.13vw;
-        }
-        .number_box_active {
-            top: 580px;
-            left: 40px;
-        }
-        .content {
-            width: 100%;
-        }
-        .athlets_news {
-            width: 100%;
-        }
-        .item_athlets {
-            padding: 7.8% 5.2% 7.2% 36.5%;
-        }
-        .athlets {
-            padding-left: 36.5%;
-            margin: 11.1% 0% 6.25% 0%;
-            font-size: 10.42vw;
-        }
-        .title_connection,
-        .title_collaboration,
-        .title_growth {
-            font-size: 4.17vw;
-        }
-        .title_connection::before,
-        .title_collaboration::before,
-        .title_growth::before {
-            font-size: 2.34vw;
-        }
-        .title_connection::after,
-        .title_collaboration::after,
-        .title_growth::after {
-            width: 4.65%;
-        }
-        .description,
-        .description_growth {
-            font-size: 2.08vw;
-            letter-spacing: 0.8px;
-        }
-        .players_news {
-            width: 100%;
-        }
-        .item_players {
-            padding: 7.8% 43% 7.2% 4.4%;
-        }
-        .players {
-            padding-left: 4.4%;
-            margin: 11.1% 0% 6.25% 0%;
-            font-size: 10.42vw;
-        }
-        .description,
-        .description_growth {
-            font-size: 2.08vw;
-            letter-spacing: 0.8px;
-        }
-        .footballer {
-            width: 93%;
-        }
-        .basketballer {
-            width: 100%;
-        }
-        .football {
-            left: -163px;
-            top: 10px;
-            width: 64.7%;
-        }
-        .basketball {
-            top: -10%;
-            right: 0%;
-            width: 56.8%;
-        }
-        .footer {
-            width: 100%;
-            background-image: url("mq-diploma-master/sources/img/game_767.jpg");
-            margin-top: 14.3%;
-            padding-top: 16.7%;
-            margin-bottom: 0%;
-            box-sizing: border-box;
-        }
-        .main_footer_text {
-            flex-wrap: wrap;
-            text-align: center;
-        }
-        .footer_text {
-            margin-left: 0%;
-            margin-top: 11.5%;
-        }
-        .footer_title {
-            font-size: 10.2vw;
-            margin: 0% 0% 4.9% 0%;
-        }
-        .footer_subtitle {
-            font-size: 4.5vw;
-        }
-        .download_links_footer {
-            margin-top: 35%;
-        }
-        .footer_logo {
-            width: 28.7%;
-            margin-top: 14%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-    
-    @media (max-width: 640px) {
-        body {
-            width: 100%;
-        }
-        .header {
-            background-image: url("mq-diploma-master/sources/img/football_767.jpg");
-            width: 100%;
-            padding-top: 14.1%;
-            padding-bottom: 34.4%;
-        }
-        .container {
-            width: 88.8%;
-        }
-        .header_logo {
-            width: 46.8%;
-        }
-        .main_text {
-            width: 95.1%;
-            margin-top: 47.9%;
-        }
-        .main_title {
-            width: 81.3%;
-            font-size: 8.75vw;
-            line-height: 1.19;
-            letter-spacing: 1.54px;
-        }
-        .second_row {
-            margin-left: 16.6%;
-            margin-top: 10.6%;
-            width: 100%;
-        }
-        .download_links {
-            flex-wrap: wrap;
-            margin-top: 31.7%;
-        }
-        .download_button {
-            width: 100%;
-            height: 35px;
-            justify-content: center;
-        }
-        .download_button:nth-child(n+2) {
-            margin-left: 0%;
-            margin-top: 5.3%;
-        }
-        .apple_icon,
-        .google_icon {
-            width: 22px;
-            height: 24px;
-        }
-        .apple_line1,
-        .google_line1 {
-            font-size: 8px;
-            letter-spacing: 0.4px;
-            text-align: left;
-        }
-        .apple_line2,
-        .google_line2 {
-            font-size: 8px;
-            letter-spacing: 0.4px;
-            text-align: left;
-        }
-        .content {
-            width: 100%;
-            padding-top: 14.1%;
-        }
-        .athlets_news,
-        .players_news {
-            width: 100%;
-        }
-        .athlets_news {
-            padding-bottom: 17.2%;
-        }
-        .players_news {
-            padding-bottom: 0%;
-        }
-        .athlets,
-        .players {
-            font-size: 15.6vw;
-            line-height: 0px;
-            padding-left: 6.25%;
-            margin: 0%;
-        }
-        .football {
-            left: 17%;
-            top: 4%;
-            width: 60%;
-        }
-        .footballer,
-        .basketballer {
-            width: 100%;
-        }
-        .item_connection {
-            padding: 103.1% 6.25% 15.6% 6.25%;
-        }
-        .item_collaboration,
-        .item_growth {
-            padding: 18.75% 6.25% 15.6% 6.25%;
-        }
-        .title_connection,
-        .title_collaboration,
-        .title_growth {
-            font-size: 7.2vw;
-            letter-spacing: 1.15px;
-        }
-        .title_connection::before,
-        .title_collaboration::before,
-        .title_growth::before {
-            margin-right: 1.86%;
-            padding-top: 0.94%;
-            font-size: 4.36vw;
-            letter-spacing: 0.7px;
-        }
-        .title_connection::after,
-        .title_collaboration::after,
-        .title_growth::after {
-            content: "";
-            width: 4.69%;
-            height: 4px;
-            top: 66.56%;
-            left: 0.5%;
-        }
-        .description,
-        .description_growth {
-            font-size: 4.69vw;
-            letter-spacing: 0.75px;
-        }
-        .basketball {
-            left: 4%;
-            top: 4%;
-            width: 94.4%;
-        }
-        .card {
-            width: 100%;
-            flex-wrap: wrap;
-        }
-        .be_active_picture,
-        .find_contact_picture,
-        .work_it_picture {
-            width: 200%;
-        }
-        .card_description {
-            width: 100%;
-            margin-left: 0%;
-            padding-top: 10.3%;
-            padding-bottom: 24.1%;
-            padding-right: 6.25%;
-            padding-left: 6.25%;
-        }
-        .card_title {
-            font-size: 8.75vw;
-            letter-spacing: 1.4px;
-        }
-        .card_text {
-            width: 100%;
-            font-size: 5vw;
-            letter-spacing: 0.8px;
-            padding-top: 7.2%;
-        }
-        .card_description_find {
-            order: 1;
-        }
-        .number_box {
-            width: 70px;
-            height: 70px;
-            font-size: 4.38vw;
-            letter-spacing: 0.7px;
-            top: 295px;
-            left: 20px;
-        }
-        .number_box::after {
-            content: "";
-            width: 15px;
-            height: 4px;
-            background-color: #ffffff;
-            left: 27px;
-            top: 45px;
-        }
-        .footer {
-            background-image: url("mq-diploma-master/sources/img/game_767.jpg");
-            width: 100%;
-            padding-top: 31.25%;
-            padding-bottom: 3.13%;
-        }
-        .footer_title {
-            font-size: 10vw;
-            letter-spacing: 1.1px;
-            margin-bottom: 0%;
-        }
-        .footer_subtitle {
-            font-size: 4.4vw;
-            letter-spacing: 0.7px;
-        }
-        .main_footer_text {
-            flex-wrap: wrap;
-            text-align: center;
-        }
-        .footer_text {
-            margin-left: 0%;
-            margin-top: 18.75%;
-        }
-        .download_links {
-            margin-top: 23.75%;
-        }
-        .footer_logo {
-            margin-top: 25.6%;
-            width: 46.8%;
-        }
-    }
+}
